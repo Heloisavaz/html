@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+/*Estilo do body*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.anotacao {
+    background-color: rgb(244, 248, 19);
+    padding: 5px;
+    text-align: center;
+}
+ 
+.cabecalho {
+  padding: 60px;
+text-align: center;
+background-image: url(../imagens/pc.png);
+background-size: cover;
+color: aliceblue;
+}
+.barra_nav {
+   display: flex;
+   background-color: black;
+}
+
+.barra_nav a{
+    color: white;
+    padding: 14px 10px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+/*trocar a cor ddxde fundo quando o cursor estiver sobre o lnk*/
+.barra_nav a:hover {
+    background-color: aliceblue;
+    color: dimgray;
+}
+
+/*configurar a div coluna*/
+.coluna {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.lateral {
+    flex: 30%;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.principal {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/*Imagens Falsas apenas para marcação do espaço*/
+.imagem_falsa {
+    background-color: aquamarine;
+    width: 100%;
+    padding: 20px;
+    height: 200px
+}
+
+.imagem_falsa2 {
+    background-color: aquamarine;
+    width: 100%;
+    padding: 20px;
+    height: 60px;
+    margin-bottom: 10px
+}
+
+.imagem_falsa3 {
+    background-color: aquamarine;
+    width: 100%;
+    padding: 20px;
+    height: 200px
+}
+
+.rodape {
+    max-height: fit-content;
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 500px) {
+    .coluna, .barra_nav {
+        flex-direction: column;
+    }
+
+    .cabecalho {
+        background-image: url(../imagens/cel.png);
+        background-size: cover;
+        color: white
+    }
+   
+}
